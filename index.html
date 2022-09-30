@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /***header starts****/
+        header{
+            background-color: rgb(38, 72, 61);
+            color: white;
+            padding: 35px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 25px;
+        }
+        /****header ends here******/
+
+        /*****Navigation starts here****/
+        nav{
+            float: left;
+            width: 30%;
+            padding: 20px;
+            height: 400px;
+            background-color: rgb(125, 141, 155);
+        }
+
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+            font-size: 40px;
+            font-weight: bolder;
+            text-shadow: 2px 2px 5px red;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+        }
+
+        nav ul li a:hover{
+            background-color: white;
+            color: blue;
+        }
+        /********Navigation stops here*******/
+
+        article{
+            float: left;
+            padding: 30px;
+            width: 70%;
+            height: 400px;
+            background-color: aqua;
+        }
+
+        article h1{
+            text-transform: uppercase;
+            color: rgb(0, 6, 93);
+        }
+
+        article p{
+            color: navy;
+        }
+
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        footer{
+            padding: 20px;
+            text-align: center;
+            background-color: green;
+            height: 60px;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav, article, iframe {
+                width: 100%;
+                height: auto;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>The <span style="color: gold;">Queency</span> Academy</h2>
+      </header>
+      
+      <section>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <article>
+          <h1>SPEAK AS A LEADER</h1>
+          <p>Nigeria ICT Training School that leads individuals to Learn, Explore and Connect to the world at large.</p>
+          <p><iframe width="500" height="250" src="https://www.youtube.com/embed/bGBamfWasNQ" title="Speak like a leader | Simon Lancaster | TEDxVerona" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        </article>
+      </section>
+      
+      <footer>
+        <span>&copy; QFLC 2022</span>
+      </footer>
+      
+    
+</body>
+
+</html>
